@@ -1,9 +1,13 @@
 body{
-  position: relative;
   font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
-.container {
+.container { 
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
 }
 
 .navbar {
@@ -60,25 +64,44 @@ body{
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.billboard{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left:0;
+  height: 538px;
 }
 
 .header {
+  padding-top: 14.5%;
   text-align: center;
-}
-
-.header a img{
+  width: 980px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.header a{
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+}
+
 h1 {
   margin: 0;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.row {
+  width:100%;
+  margin: 0 32px;
+}
+
+.col {
+  float: left;
+  width: auto;
+  margin: 1px;
 }
