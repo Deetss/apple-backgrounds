@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
@@ -16,7 +21,7 @@ body{
   box-sizing: border-box;
   height: 36px;
   width: 980px;
-  top: 8px;
+  top: 18px;
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
@@ -49,7 +54,7 @@ body{
 }
 
 .search {
-  width: 20%;
+  padding: 13px 8px;
 }
 
 .nav-links {
@@ -77,18 +82,24 @@ body{
 
 .header a{
   color: white;
+  font-family: 'Lato', sans-serif;
   text-decoration: none;
   overflow: hidden;
 }
 
 h1 {
   margin: 0;
-  font-size: 48px;
+  margin-bottom: 28px;
+  font-size: 56px;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 32px;
   line-height: 40px;
+  width: 85%;
+  margin:auto;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -96,12 +107,43 @@ h3 {
 }
 
 .row {
-  width:100%;
-  margin: 0 32px;
+  width:1440px;
+  margin: 2px auto;
 }
 
 .col {
   float: left;
-  width: auto;
-  margin: 1px;
+}
+
+.col:not(:last-child) {
+  margin-right: 2px;
+}
+
+.footer{
+  padding: 20px 0;
+  clear:both;
+  width: 65%;
+  margin: auto;
+  color: grey;
+  font-size: 10px;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li{
+    display: inline;
+}
+
+.footer p {
+  padding: 6px 0;
 }
